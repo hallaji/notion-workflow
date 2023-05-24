@@ -4,7 +4,7 @@ require 'json'
 require 'net/http'
 
 api_key = ENV['NOTION_API_KEY']
-database_id = ENV['BOOKMARKS_DATABASE_ID']
+database_id = ENV['NOTION_BOOKMARKS_DATABASE_ID']
 
 if api_key.nil? || api_key.empty?
   puts JSON.generate({
